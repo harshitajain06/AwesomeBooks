@@ -40,7 +40,7 @@ function submit() {            // eslint-disable-line
   };
 
   const storedTitleAuthor = JSON.parse(localStorage.getItem('students'));
-  if (storedTitleAuthor === undefined) {
+  if (!storedTitleAuthor) {
     titleAuthorArray.push(title_author);
     localStorage.setItem('students', JSON.stringify(titleAuthorArray));
   } else {
