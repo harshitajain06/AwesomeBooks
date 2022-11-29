@@ -3,6 +3,12 @@ const titleAuthorArray = [];
 const storedTitleAuthor = JSON.parse(localStorage.getItem('students'));
 // console.log(storedTitleAuthor);
 const book = document.getElementById('display_card');
+if(!storedTitleAuthor){
+  book.innerHTML=`
+  <div></div>
+  `
+}
+else{
 for (let i = 0; i < storedTitleAuthor.length; i += 1) {
   const temp = i;
   book.innerHTML += `
@@ -13,7 +19,7 @@ for (let i = 0; i < storedTitleAuthor.length; i += 1) {
     </button>
     `;
 }
-
+}
 // remove()
 const removeElements = document.querySelectorAll('.remove');
 removeElements.forEach((el) => {
