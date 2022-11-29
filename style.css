@@ -1,3 +1,7 @@
+body {
+  font-family: cursive;
+}
+
 #submit_button {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -11,4 +15,40 @@
 
 input {
   margin: 10px;
+}
+
+.displayWrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#display_card {
+  padding: 3px;
+  width: 35%;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  padding: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card button {
+  height: 30px;
+}
+
+.card p {
+  margin: 5px;
+}
+
+hr {
+  width: 100px;
+  color: black;
+  border: 2px solid black;
 }
