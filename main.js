@@ -1,4 +1,3 @@
-
 const titleAuthorArray = [];
 class TitleAuthor {
   remove(str) {                        // eslint-disable-line
