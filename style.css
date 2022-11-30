@@ -1,6 +1,17 @@
+body {
+  font-family: cursive;
+}
+
 #submit_button {
   margin-top: 20px;
   margin-bottom: 20px;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0.2rem 0.2rem black;
 }
 
 #sort_button {
@@ -11,4 +22,74 @@
 
 input {
   margin: 10px;
+}
+
+.displayWrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#display_card {
+  padding: 3px;
+  width: 35%;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card:nth-child(even) {
+  background-color: #ddd;
+}
+
+#card1 {
+  padding: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card button {
+  height: 30px;
+  box-shadow: 0.2rem 0.2rem black;
+}
+
+.card p {
+  margin: 5px;
+}
+
+hr {
+  width: 100px;
+  color: black;
+  border: 2px solid black;
+}
+
+.remove {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+#title,
+#author {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+
+#title::placeholder,
+#author::placeholder {
+  color: black;
 }
