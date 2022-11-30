@@ -1,4 +1,3 @@
-
 const titleAuthorArray = [];
 class TitleAuthor {
   remove(str) {                        // eslint-disable-line
@@ -33,9 +32,9 @@ class TitleAuthor {
     const storedTitleAuthor = JSON.parse(localStorage.getItem('students'));
     // console.log(storedTitleAuthor);
     const book = document.getElementById('display_card');
-    if (!storedTitleAuthor) {
+    if (!storedTitleAuthor || storedTitleAuthor.length === 0) {
       book.innerHTML = `
-  <div></div>
+  <div>No Books Stored</div>
   `;
     } else {
       for (let i = 0; i < storedTitleAuthor.length; i += 1) {
@@ -73,4 +72,3 @@ removeElements.forEach((el) => {
             location.reload(); // eslint-disable-line
   });
 });
-
