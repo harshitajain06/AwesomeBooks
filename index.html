@@ -8,36 +8,66 @@
 </head>
 
 <body>
-    <center>
-        <h1 style="margin-top: 20px; margin-bottom: 20px; ">
-           All awesome books
-        </h1>
-    <div class="displayWrap">
-        <div id="display_card" style="font-weight: bold;">
+    <header>
+        <nav class="nav">
+            <h1>All Awesome Books</h1>
+            <ul>
+                <li class="menuList">List</li>
+                <span style="display: inline-block; width:3px; background-color:rgb(0, 0, 0); color: black;"></span>
+                <li class="menuAdd">Add New</li>
+                <span style="display: inline-block; width:3px; background-color:rgb(0, 0, 0); color: black;"></span>
+                <li class="menuContact">Contact</li>
+            </ul>
+        </nav>  
+    </header>
 
-        </div>
-    </div>
-   <hr>
-    <h2 style="margin-top: 20px; margin-bottom: 20px; ">
-        Add a new book
-     </h2>
+    <!-- Books List -->
+    <Section class="sectionList">
+        <center>
+            <h1 style="margin-top: 20px; margin-bottom: 20px; ">
+                All awesome books
+             </h1>
+         <div class="displayWrap">
+             <div id="display_card" style="font-weight: bold;">
+     
+             </div>
+         </div>
+        <hr>
+        
+        </center>
+    </Section>
 
-        <div>
-         <form class="form">
-            <input type="text" placeholder="Title" id="title" required>
-            <br>
+    <!-- Add NEW Book -->
 
-            <input type="text" placeholder="Author" id="author" required>
-            <br>
+    <section class="newBook">
+        <h2 style="margin-top: 20px; margin-bottom: 20px; ">
+            Add a new book
+         </h2>
+            <div>
+             <form class="form">
+                <input type="text" placeholder="Title" id="title" required>    
+                <input type="text" placeholder="Author" id="author" required>
+                <button id="submit_button"> Add </button>
+            </form>
+            </div>
+    </section>
 
-            <button id="submit_button">
-                Add
-            </button>
-        </form>
-        </div>
+    <!-- Contact -->
 
+    <Section class="contact">
+            <h1>Contact Information</h1>
+            <ul>
+                <li>Our Email :- mail@mail.com</li>
+                <li>Our Phone Number :- +91987654321</li>
+                <li>Our Address :- 13th wall street, wyoming CA, USA</li>
+            </ul>
+    </Section>
+  
+    <!-- Footer -->
 
-    </center>
+    <footer class="footer">
+        <p>Copyright Harshita jain 2022.</p>
+    </footer>
 
     <script src="main.js"></script>
 </body>

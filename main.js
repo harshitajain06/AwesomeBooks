@@ -36,7 +36,8 @@ class TitleAuthor {
       book.innerHTML = `
   <div>No Books Stored</div>
   `;
-    } else {
+    } 
+    else {
       for (let i = 0; i < storedTitleAuthor.length; i += 1) {
         const temp = i;
         book.innerHTML += `
