@@ -1,3 +1,30 @@
+const menuList = document.querySelector('.menuList');
+const menuAdd = document.querySelector('.menuAdd');
+const menuContact = document.querySelector('.menuContact');
+const sectionList = document.querySelector('.sectionList');
+const newBook = document.querySelector('.newBook');
+const contact = document.querySelector('.contact');
+  sectionList.style.display = 'flex';
+  newBook.style.display = 'none';
+  contact.style.display = 'none';
+
+menuList.addEventListener('click', () => {
+  sectionList.style.display = 'flex';
+  newBook.style.display = 'none';
+  contact.style.display = 'none';
+});
+menuAdd.addEventListener('click', () => {
+  sectionList.style.display = 'none';
+  newBook.style.display = 'flex';
+  contact.style.display = 'none';
+});
+menuContact.addEventListener('click', () => {
+  sectionList.style.display = 'none';
+  newBook.style.display = 'none';
+  contact.style.display = 'flex';
+});
+
+
 const titleAuthorArray = [];
 class TitleAuthor {
   remove(str) {                        // eslint-disable-line
