@@ -4,9 +4,9 @@ const menuContact = document.querySelector('.menuContact');
 const sectionList = document.querySelector('.sectionList');
 const newBook = document.querySelector('.newBook');
 const contact = document.querySelector('.contact');
-  sectionList.style.display = 'flex';
-  newBook.style.display = 'none';
-  contact.style.display = 'none';
+sectionList.style.display = 'flex';
+newBook.style.display = 'none';
+contact.style.display = 'none';
 
 menuList.addEventListener('click', () => {
   sectionList.style.display = 'flex';
@@ -23,7 +23,6 @@ menuContact.addEventListener('click', () => {
   newBook.style.display = 'none';
   contact.style.display = 'flex';
 });
-
 
 const titleAuthorArray = [];
 class TitleAuthor {
@@ -63,8 +62,7 @@ class TitleAuthor {
       book.innerHTML = `
   <div>No Books Stored</div>
   `;
-    } 
-    else {
+    } else {
       for (let i = 0; i < storedTitleAuthor.length; i += 1) {
         const temp = i;
         book.innerHTML += `

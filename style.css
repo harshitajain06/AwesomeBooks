@@ -145,12 +145,6 @@ section {
   align-items: center;
 }
 
-#submit_button {
-  align-self: flex-end;
-  margin-right: 12px;
-  margin-top: 0;
-}
-
 .contact {
   display: none;
   flex-direction: column;
