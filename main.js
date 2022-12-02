@@ -94,7 +94,7 @@ const submit1 = document.querySelector('#submit_button');
 submit1.addEventListener('click', () => {
   show.submit();
   alert('Books Added');      // eslint-disable-line
-  
+
 });
 const removeElements = document.querySelectorAll('.remove');
 removeElements.forEach((el) => {
