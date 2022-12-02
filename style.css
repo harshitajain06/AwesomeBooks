@@ -2,6 +2,15 @@ body {
   font-family: cursive;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:active {
+  color: blue;
+}
+
 #submit_button {
   margin-top: 20px;
   margin-bottom: 20px;

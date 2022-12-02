@@ -12,6 +12,7 @@ menuList.addEventListener('click', () => {
   sectionList.style.display = 'flex';
   newBook.style.display = 'none';
   contact.style.display = 'none';
+  location.reload();         // eslint-disable-line
 });
 menuAdd.addEventListener('click', () => {
   sectionList.style.display = 'none';
@@ -61,7 +62,7 @@ class TitleAuthor {
         location.reload(); // eslint-disable-line
   }
 
-  showBook() {                 // eslint-disable-line
+  showBook() {                 // eslint-disable-line   
     const storedTitleAuthor = JSON.parse(localStorage.getItem('students'));
     // console.log(storedTitleAuthor);
     const book = document.getElementById('display_card');
@@ -93,6 +94,7 @@ const submit1 = document.querySelector('#submit_button');
 submit1.addEventListener('click', () => {
   show.submit();
   alert('Books Added');      // eslint-disable-line
+  
 });
 const removeElements = document.querySelectorAll('.remove');
 removeElements.forEach((el) => {
