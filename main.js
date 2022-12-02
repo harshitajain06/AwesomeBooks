@@ -1,3 +1,37 @@
+const menuList = document.querySelector('.menuList');
+const menuAdd = document.querySelector('.menuAdd');
+const menuContact = document.querySelector('.menuContact');
+const sectionList = document.querySelector('.sectionList');
+const newBook = document.querySelector('.newBook');
+const contact = document.querySelector('.contact');
+sectionList.style.display = 'flex';
+newBook.style.display = 'none';
+contact.style.display = 'none';
+
+menuList.addEventListener('click', () => {
+  sectionList.style.display = 'flex';
+  newBook.style.display = 'none';
+  contact.style.display = 'none';
+  location.reload();         // eslint-disable-line
+});
+menuAdd.addEventListener('click', () => {
+  sectionList.style.display = 'none';
+  newBook.style.display = 'flex';
+  contact.style.display = 'none';
+});
+menuContact.addEventListener('click', () => {
+  sectionList.style.display = 'none';
+  newBook.style.display = 'none';
+  contact.style.display = 'flex';
+});
+
+const time1 = new Date();
+
+const timeDate = time1.toDateString();
+const timeHr = time1.toLocaleTimeString();
+const timeDiv = document.querySelector('.time');
+timeDiv.innerHTML = `${timeDate} ${timeHr}`;
+
 const titleAuthorArray = [];
 class TitleAuthor {
   remove(str) {                        // eslint-disable-line
@@ -28,7 +62,7 @@ class TitleAuthor {
         location.reload(); // eslint-disable-line
   }
 
-  showBook() {                 // eslint-disable-line
+  showBook() {                 // eslint-disable-line   
     const storedTitleAuthor = JSON.parse(localStorage.getItem('students'));
     // console.log(storedTitleAuthor);
     const book = document.getElementById('display_card');
@@ -59,6 +93,8 @@ const submit1 = document.querySelector('#submit_button');
 
 submit1.addEventListener('click', () => {
   show.submit();
+  alert('Books Added');      // eslint-disable-line
+
 });
 const removeElements = document.querySelectorAll('.remove');
 removeElements.forEach((el) => {

@@ -8,36 +8,69 @@
 </head>
 
 <body>
-    <center>
-        <h1 style="margin-top: 20px; margin-bottom: 20px; ">
-           All awesome books
-        </h1>
-    <div class="displayWrap">
-        <div id="display_card" style="font-weight: bold;">
-
-        </div>
+    <header>
+        <nav class="nav">
+            <h1>All Awesome Books</h1>
+            <ul>
+                <li class="menuList"><a href="#">List</a></li>
+                <span style="display: inline-block; width:3px; background-color:rgb(0, 0, 0); color: black;"></span>
+                <li class="menuAdd"><a href="#">Add New</a></li>
+                <span style="display: inline-block; width:3px; background-color:rgb(0, 0, 0); color: black;"></span>
+                <li class="menuContact"><a href="#">Contact</a></li>
+            </ul>
+        </nav>  
+    </header>
+    <div class="time">
+        
     </div>
-   <hr>
-    <h2 style="margin-top: 20px; margin-bottom: 20px; ">
-        Add a new book
-     </h2>
 
-        <div>
-         <form class="form">
-            <input type="text" placeholder="Title" id="title" required>
-            <br>
+    <!-- Books List -->
+    <Section class="sectionList">
+        
+            <h1 style="margin-top: 20px; margin-bottom: 20px; text-align: center;">
+                All awesome books
+             </h1>
+         <div class="displayWrap">
+             <div id="display_card" style="font-weight: bold;">
+     
+             </div>
+         </div>
+        <hr>
+        
+        
+    </Section>
 
-            <input type="text" placeholder="Author" id="author" required>
-            <br>
+    <!-- Add NEW Book -->
 
-            <button id="submit_button">
-                Add
-            </button>
-        </form>
-        </div>
+    <section class="newBook">
+        <h2 style="margin-top: 20px; margin-bottom: 20px; ">
+            Add a new book
+         </h2>
+            <div>
+             <form class="form">
+                <input type="text" placeholder="Title" id="title" required>    
+                <input type="text" placeholder="Author" id="author" required>
+                <button id="submit_button"> Add </button>
+            </form>
+            </div>
+    </section>
 
+    <!-- Contact -->
 
-    </center>
+    <Section class="contact">
+            <h1>Contact Information</h1>
+            <ul>
+                <li>Our Email :- harshitaforever06@gmail.com.com</li>
+                <li>Our Phone Number :- +91 9756503875</li>
+                <li>Our Address :- C-23 Kamla Nagar, Agra</li>
+            </ul>
+    </Section>
+  
+    <!-- Footer -->
+
+    <footer class="footer">
+        <p>Copyright @harshita jain and Saba Ahmad</p>
+    </footer>
 
     <script src="main.js"></script>
 </body>

@@ -2,6 +2,15 @@ body {
   font-family: cursive;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:active {
+  color: blue;
+}
+
 #submit_button {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -92,4 +101,77 @@ hr {
 #title::placeholder,
 #author::placeholder {
   color: black;
+}
+
+.nav {
+  border: 4px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  margin: 0;
+}
+
+.nav h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  text-decoration: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.nav li {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.newBook {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  border: 4px solid black;
+  padding: 0 20px;
+  margin: 0;
+}
+
+.time {
+  text-align: right;
 }
