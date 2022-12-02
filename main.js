@@ -24,6 +24,14 @@ menuContact.addEventListener('click', () => {
   contact.style.display = 'flex';
 });
 
+
+const time1 = new Date();
+
+const timeDate = time1.toDateString();
+const timeHr = time1.toLocaleTimeString();
+const timeDiv = document.querySelector('.time');
+timeDiv.innerHTML = `${timeDate} ${timeHr}`;
+
 const titleAuthorArray = [];
 class TitleAuthor {
   remove(str) {                        // eslint-disable-line
@@ -85,6 +93,7 @@ const submit1 = document.querySelector('#submit_button');
 
 submit1.addEventListener('click', () => {
   show.submit();
+  alert("Books Added")
 });
 const removeElements = document.querySelectorAll('.remove');
 removeElements.forEach((el) => {

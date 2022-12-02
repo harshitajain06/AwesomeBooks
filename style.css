@@ -162,3 +162,7 @@ section {
   padding: 0 20px;
   margin: 0;
 }
+
+.time {
+  text-align: right;
+}
